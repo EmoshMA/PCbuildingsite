@@ -1,0 +1,293 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+    background-color: pink;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.computer-option {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    flex-basis: calc(33.33% - 47px);
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.computer-option h2 {
+	margin-top: 0;
+}
+
+.computer-option p {
+	margin-bottom: 10px;
+}
+
+.computer-option a {
+	background-color: #007bff;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.computer-option a:hover {
+	background-color: #0062cc;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+nav {
+    margin-right: 81px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.product-images-slider__main-img {
+    cursor: zoom-in;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.contact-btn-container {
+    position: relative;
+  }
+  
+  .contact-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 573px;
+  }
+  
+  .contact-info {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: pink;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 300px;
+    opacity: 0;
+    transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  }
+  
+  .contact-btn-container:hover .contact-info {
+    bottom: -150px;
+    opacity: 1;
+  }
+  
+  .contact-info p {
+    margin-top: 0;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 5px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #73A353;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-left: 733px;
+    margin-top: 100px;
+    font-size: 34px;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+
+/* Стили для модального окна */
+.modal {
+  display: none; /* Скрываем модальное окно по умолчанию */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 60%;
+  max-height: 60%;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  padding: 20px;
+}
+
+/* Стили для кнопки закрытия модального окна */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.sublist {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #fff; /* добавляем белый цвет текста */
+}
+
+.sublist li {
+  margin-bottom: 5px;
+  color: #fff; /* добавляем белый цвет текста */
+  position: relative; /* добавляем позиционирование для кнопки */
+}
+
+/* Стили для кнопки показать/скрыть список */
+.show-list {
+  display: block;
+}
+
+.hide-list {
+  display: none;
+}
+
+.specs {
+  font-size: 18px;
+  text-decoration-color: white;
+
+}
+
+.spisok {
+  background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.check-btn {
+  width: 37px;
+    height: 34px;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    top: -19px;
+    right: -226px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.check-btn::after {
+  content: "";
+  display: block;
+  width:10px;
+  height: 10px;
+  margin: 3px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.check-btn.checked::after {
+  background-color: #000;
+}
+
+/* Стили для кнопки выбора этапа */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Стили для кнопки выбора этапа в модальном окне */
+.modal button {
+  margin: 0;
+}
